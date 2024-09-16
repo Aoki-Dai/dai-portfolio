@@ -16,6 +16,14 @@
       height: 100%;
       z-index: -1;
     }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      flex: 1;
+    }
   </style>
 </head>
 <body class="text-white bg-gray-900">
@@ -48,7 +56,7 @@
       <p>ここに連絡先を記載します。</p>
     </section>
   </main>
-  <footer class="relative z-10 p-4 mt-16 text-center bg-gray-800 bg-opacity-80">
+  <footer class="relative z-10 p-4 text-center bg-gray-800 bg-opacity-80">
     <p>&copy; 2024 Dai Aoki</p>
   </footer>
 </body>
