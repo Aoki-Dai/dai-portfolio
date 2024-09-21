@@ -16,17 +16,9 @@
       height: 100%;
       z-index: -1;
     }
-    body {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    main {
-      flex: 1;
-    }
   </style>
 </head>
-<body class="text-white bg-gray-900">
+<body class="flex flex-col min-h-screen text-white bg-gray-900">
   <div id="p5-canvas"></div>
   <header class="relative z-10 p-4 text-center bg-gray-800 bg-opacity-80">
     <nav>
@@ -38,24 +30,36 @@
       </ul>
     </nav>
   </header>
-  <main class="relative z-10 p-8">
-    <section id="about" class="mb-8">
+  <main class="relative z-10 flex-1 p-8 text-white">
+    <section id="about" class="p-4 mb-8 bg-black rounded bg-opacity-60">
       <h1 class="text-3xl font-bold">自己紹介</h1>
-      <p>ここに自己紹介文を記載します。</p>
+      <p>青木大です。Webアプリケーション開発を中心に、バックエンドとフロントエンドの両方を経験し、フルスタックエンジニアを目指しています。LaravelやJavaScriptを用いた開発に強みがあり、チーム開発やプロジェクト管理の経験を活かして、ユーザー視点に立ったサービスの提供を心がけています。常に新しい技術を学び、挑戦を続けることを大切にしています。</p>
     </section>
-    <section id="skills" class="mb-8">
+  
+    <section id="skills" class="p-4 mb-8 bg-black rounded bg-opacity-60">
       <h2 class="text-2xl font-bold">スキル</h2>
-      <p>ここにスキルを記載します。</p>
+      <p>
+        <strong>プログラミング言語:</strong> HTML, CSS, JavaScript, PHP, Java<br>
+        <strong>フレームワーク:</strong> Laravel, Ruby on Rails<br>
+        <strong>ツール・その他:</strong> Git, GitHub, Docker, Notion, Figma<br>
+      </p>
     </section>
-    <section id="projects" class="mb-8">
+  
+    <section id="projects" class="p-4 mb-8 bg-black rounded bg-opacity-60">
       <h2 class="text-2xl font-bold">プロジェクト</h2>
-      <p>ここにプロジェクトを記載します。</p>
+      <p>
+        <strong>@nifty新生活質問サイト</strong> - 若者向けに生活に関する質問を投稿し、専門家やユーザーからの回答を得られるサイトの構築に携わりました。<br>
+        <strong>ToDoアプリ</strong> - タスクの進捗を視覚化する円グラフや、残り時間に応じた絵文字の変化機能を実装し、ユニークなユーザー体験を提供しました。<br>
+        <strong>研究室プロジェクトでの開発</strong> - 東北工業大学アクセスマップにバスの次発時刻表示機能を追加しました。
+      </p>
     </section>
-    <section id="contact" class="mb-8">
+  
+    <section id="contact" class="p-4 mb-8 bg-black rounded bg-opacity-60">
       <h2 class="text-2xl font-bold">連絡先</h2>
-      <p>ここに連絡先を記載します。</p>
+      <p>Email: aokidai0127@gmail.com
     </section>
   </main>
+
   <footer class="relative z-10 p-4 text-center bg-gray-800 bg-opacity-80">
     <p>&copy; 2024 Dai Aoki</p>
   </footer>
